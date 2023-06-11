@@ -1,5 +1,6 @@
 <h3>New book</h3>
-<%= form_with model: @Book do |f| %>
+<%= form_with model: @Book, url: '/books', method: :post do |f| %>
+
   <h6>Title</h6>
   <%= f.text_field :title %>
 
@@ -7,4 +8,5 @@
   <%= f.text_area :body %>
 
   <%= f.submit 'Create Book' %>
+
 <% end %>
