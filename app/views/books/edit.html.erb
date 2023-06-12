@@ -1,5 +1,5 @@
 <h2>Editing Book</h2>
-<%= form_with model: @book, url:update_book_path(@book.id), method: :patch do |f| %>
+<%= form_with model: @book do |f| %>
 
   <p>Title</p>
   <%= f.text_field :title %>
@@ -8,6 +8,9 @@
   <%= f.text_area :body %>
 
   <%= f.submit 'Update Book' %>
+
+  <%= link_to "show", book_path(@book.id) %>
+  <%= link_to "Back", books_path(@books) %>
 
 <% end %>
 
