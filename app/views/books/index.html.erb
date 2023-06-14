@@ -8,11 +8,14 @@
 　  <tr>
       <th>Title</th>
       <th>Body</th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
     <!--</thead>-->
     <% @books.each do |book| %>
     <div class="bookList">
-    <tr>
+      <tr>
       <td class="bookListTitle"><%= book.title %></td>
       <td class="bookListBody"><%= book.body %></td>
       <td class="bookListShow"><%= link_to "show", book_path(book.id) %></td>
@@ -20,8 +23,9 @@
       <td class="bookListDestroy"><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %></td>
     </tr>
     </div>
+    <% end %>
   </table>
-<% end %>
+
 
 <h3>New book</h3>
 <% if @book.errors.any? %>
