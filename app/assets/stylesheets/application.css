@@ -21,9 +21,42 @@
 }
 
 h2 {
-  
+  margin: 20px;
 }
 
 .top-title {
-  
+  margin: 40px;
+}
+
+h3 {
+  margin: 30px;
+}
+.bookList {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.bookListTitle {
+  width: 100px;
+
+}
+
+.bookListBody {
+  width: 250px;
+
+}
+
+.bookListShow {
+  margin: 5px;
+
+}
+
+.bookListEdit {
+  margin: 5px;
+
+}
+
+.bookListDestroy {
+  margin: 5px;
+
 }
