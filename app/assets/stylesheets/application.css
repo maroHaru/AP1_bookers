@@ -97,4 +97,32 @@ h2 {
 }
 .follow_submit {
   display: block;
+  margin-bottom: 10px;
+}
+
+.follow_show {
+  position: relative;
+  /*display: inline-block;*/
+  /*border-right: 2px solid #000;*/
+  height: 15px;
+  line-height: 15px;
+  margin-right: 1.5em;
+  color: #696969;
+}
+
+.follow_show::after {
+  position: absolute;
+  top: 5px;
+  left: 100%;
+  margin: 0 1rem;
+  content: "";
+  width: 1px;
+  height: 60%;
+  background-color: black;
+}
+
+.follow_Back {
+  height: 15px;
+  line-height: 15px;
+  color: #696969;
 }
